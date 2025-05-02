@@ -17,7 +17,7 @@ const USERS = [
   ];
   
  const USERNAME = "VirajKabbur"; // Your Adafruit IO username
-  const API_KEY = "aio_LTwT60hnR78NUOnCSAfrRaPj0KHp"; // Your Adafruit IO key
+  const API_KEY = "aio_EKzW01xrdMgAtgoTWjq8HO4G0pmN"; // Your Adafruit IO key
   
   // DOM Elements
   const loginSection = document.getElementById("login-section");
