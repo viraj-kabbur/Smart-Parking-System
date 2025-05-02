@@ -16,8 +16,8 @@ const USERS = [
     "exitslot3"
   ];
   
-  const USERNAME = "VirajKabbur"; // Your Adafruit IO username
-  const API_KEY = "aio_LTwT60hnR78NUOnCSAfrRaPj0KHp";
+ const USERNAME = "VirajKabbur"; // Your Adafruit IO username
+  const API_KEY = "aio_LTwT60hnR78NUOnCSAfrRaPj0KHp"; // Your Adafruit IO key
   
   // DOM Elements
   const loginSection = document.getElementById("login-section");
