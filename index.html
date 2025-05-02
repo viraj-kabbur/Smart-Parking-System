@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Parking System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Parking System</h1>
+    
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Sign In</h2>
+      <div class="login-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div id="login-error" class="error-message"></div>
+        <button id="login-button" class="button">Sign In</button>
+      </div>
+    </div>
+    
+    <!-- Parking Data Section (Hidden initially) -->
+    <div id="parking-section" style="display: none;">
+      <div class="user-info">
+        <span id="user-display"></span>
+        <button id="logout-button" class="button small">Sign Out</button>
+      </div>
+      
+      <!-- User View (Visual representation) -->
+      <div id="user-view-container" style="display: none;">
+        <div class="parking-summary">
+          <div class="summary-item">
+            <span class="summary-label">Total Spots:</span>
+            <span id="total-spots" class="summary-value">0</span>
+          </div>
+          <div class="summary-item available">
+            <span class="summary-label">Available:</span>
+            <span id="available-spots" class="summary-value">0</span>
+          </div>
+          <div class="summary-item occupied">
+            <span class="summary-label">Occupied:</span>
+            <span id="occupied-spots" class="summary-value">0</span>
+          </div>
+        </div>
+        <h3>Parking Availability</h3>
+        <div id="parking-visualization"></div>
+      </div>
+      
+      <!-- Admin View (Detailed data) -->
+      <div id="admin-view-container" style="display: none;">
+        <h3>Detailed Parking Data</h3>
+        <div id="feeds-container"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

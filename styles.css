@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+  }
+  
+  #feeds-container {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .feed {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+  }
+  
+  .feed:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .status-message {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e6f7ff;
+    border-radius: 6px;
+    border-left: 4px solid #1890ff;
+  }
+  
+  .timestamp {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-top: 0.3rem;
+    text-align: center;
+  }
+  
+  .error {
+    color: #f5222d;
+    font-weight: bold;
+  }
+  
+  .no-value {
+    color: #faad14;
+    font-style: italic;
+  }
+  
+  h1 {
+    color: #1890ff;
+    margin-bottom: 1rem;
+  }
+  
+  h2, h3 {
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Login form styles */
+  .login-form {
+    text-align: left;
+    margin: 1.5rem auto;
+    max-width: 300px;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: A1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .input-group input:focus {
+    border-color: #1890ff;
+    outline: none;
+  }
+  
+  .button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #096dd9;
+  }
+  
+  .button.small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    width: auto;
+  }
+  
+  .error-message {
+    color: #f5222d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 1.2rem;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  #user-display {
+    font-weight: bold;
+    color: #1890ff;
+  }
+  
+  /* Parking visualization styles */
+  .parking-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+  }
+  
+  .summary-item {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 1rem 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .summary-item.available {
+    background-color: #d9f7be;
+    color: #389e0d;
+  }
+  
+  .summary-item.occupied {
+    background-color: #ffccc7;
+    color: #cf1322;
+  }
+  
+  .summary-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .summary-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .parking-lot {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .parking-spot {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+  
+  .parking-spot.available {
+    background-color: #d9f7be;
+    border: 2px solid #52c41a;
+  }
+  
+  .parking-spot.occupied {
+    background-color: #ffccc7;
+    border: 2px solid #f5222d;
+  }
+  
+  .spot-number {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .spot-status {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .slot-info {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .loading-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+      margin: 10px;
+    }
+    
+    .login-form {
+      max-width: 100%;
+    }
+    
+    .parking-lot {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+    }
+    
+    .parking-spot {
+      height: 70px;
+    }
+    
+    .summary-item {
+      padding: 0.7rem 0.3rem;
+    }
+    
+    .summary-value {
+      font-size: 1.2rem;
+    }
+  }
