@@ -17,7 +17,7 @@ const USERS = [
   ];
   
   const USERNAME = "VirajKabbur"; // Your Adafruit IO username
-  const API_KEY = process.env.ADAFRUIT_API_KEY;
+  const API_KEY = ;
   
   // DOM Elements
   const loginSection = document.getElementById("login-section");
